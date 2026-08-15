@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebGL Brush Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="panel-open">
+    <div class="app-shell">
+      <main class="app-main">
+        <div id="scroll-root">
+          <div id="sticky-viewport" class="canvas-area">
+            <div id="canvas" aria-label="Brush path canvas"></div>
+          </div>
+        </div>
+      </main>
+      <div id="panel-root" class="sidebar-root"></div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
